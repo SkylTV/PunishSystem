@@ -1,0 +1,6 @@
+name: PunishSystem
+version: 1.0
+author: SkylTV
+main: de.skyl.punish.main.Main
+commands:
+  report:
