@@ -8,10 +8,11 @@ import de.skyl.punish.utils.ReportSystem;
 import de.skyl.punish.utils.MySQL;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.chat.TextComponent;
-import net.md_5.bungee.api.plugin.Plugin;
+
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
+
 
 import java.io.File;
 import java.io.IOException;
