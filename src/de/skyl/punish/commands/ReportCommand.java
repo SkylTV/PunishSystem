@@ -3,6 +3,7 @@ package de.skyl.punish.commands;
 // Copyright SkylTV //
 
 import de.skyl.punish.main.Core;
+import de.skyl.punish.main.Main;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.LuckPermsProvider;
 import net.luckperms.api.model.user.User;
@@ -167,7 +168,7 @@ public class ReportCommand extends Command {
                     }else if(args[0].equalsIgnoreCase("deny")){
                         int reportID = Integer.parseInt(args[1]);
                         if(Core.getCore().getReportSystem().isReportIDRegister(reportID)){
-
+                            Main main ;
                             Core.getCore().getReportSystem().setStatus(reportID, "abgelehnt");
                             ProxyServer.getInstance().getScheduler().schedule(Core.getCore().getMain(), new Runnable() {
                                 @Override

@@ -10,6 +10,8 @@ import net.md_5.bungee.api.connection.ProxiedPlayer;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class ReportSystem {
@@ -193,6 +195,27 @@ public class ReportSystem {
         }
 
 
+
+    }
+
+
+    public List<String> getReportedPlayers(){
+        List<String> list = new ArrayList<>();
+        try{
+            PreparedStatement ps = MySQL.getStatement("SELECT * FROM " + reportTable);
+            ResultSet rs = ps.executeQuery();
+            try{
+                while(rs.next()){
+                    list.add(rs.getString("Gemeldeter"));
+                }
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
+
+        }catch (Exception ex){
+
+        }
+            return list;
 
     }
 

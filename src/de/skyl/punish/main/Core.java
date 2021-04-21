@@ -9,6 +9,7 @@ import net.luckperms.api.LuckPerms;
 import net.luckperms.api.LuckPermsProvider;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.Node;
+import net.md_5.bungee.api.plugin.Plugin;
 import org.json.JSONObject;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -16,7 +17,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
 
 
 public class Core {
@@ -58,7 +58,7 @@ public class Core {
 
     }
 
-    public Main getMain() {
+    public Plugin getMain() {
         return main;
     }
 
