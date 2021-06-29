@@ -1,6 +1,5 @@
 package de.skyl.punish.commands;
-// Coded By SkylTV //
-// Copyright SkylTV //
+
 
 import de.skyl.punish.main.Core;
 import de.skyl.punish.main.Main;
